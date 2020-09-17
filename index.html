@@ -3,19 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pokémon Trivia Quiz</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
     <div id ="topbar">
-        <h2 id="scores"></h2>
+        <h2 id= "scores"></h2>
         <h2 id= "countdown"></h2>
      </div>
-    <h1 id= "headText"></h1>
-    <div id= "description"></div>
-    <button id= "start">Click to start!</button>
     
-   
-
+    <div class="card col-md-7">
+        <div class="card-body">
+            <div id = "header">
+            <h1 id= "headText"></h1>
+            </div>
+            <div id= "description"></div>
+            <button id= "start" class= "btn btn-success">Click to start!</button>
+            <button id= "score" class= "btn btn-success">View High Scores</button>
+            <button id= "again" class= "btn btn-success">Play Again</button>
+            <div id= "result"></div>
+            <br>
+            <form>
+                <div class="form-group col-md-0">
+                    <label for="initials-form">Enter your initials to save your score!</label>
+                    <input type="text" class="form-control" id="form-input" placeholder="Initials">
+                  </div>
+                </form>
+        </div>
+      </div>
     <script src="script.js"></script>
 </body>
 </html>
