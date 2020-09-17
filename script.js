@@ -280,6 +280,7 @@ function viewScores() {
     document.querySelector("form").style.display = "none";
     result.style.display = "none";
     timerEl.style.display = "none";
+    scoreBtn.style.display = "none";
     playAgain.style.display = "block";
     description.textContent= " ";
     var scoreboard = document.createElement("div");
@@ -290,7 +291,7 @@ function viewScores() {
         highScores.sort((a, b) => {
             return b.userScore - a.userScore
         });
-        scoreDiv.textContent = (i+1) + ". " + highScores[i].userInits + " : " + highScores[i].userScore + " seconds";
+        scoreDiv.textContent = (i+1) + ". " + highScores[i].userInits + " : " + highScores[i].userScore + " seconds left";
         scoreboard.appendChild(scoreDiv)
         }
         description.appendChild(scoreboard)
